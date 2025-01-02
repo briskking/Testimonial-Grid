@@ -5,19 +5,6 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-/* html{ */
-
-/* } */
-
-:root {
-    --Moderateviolet: hsl(263, 55%, 52%);
-    --Verydarkgrayishblue: hsl(217, 19%, 35%);
-    --Verydarkblackishblue: hsl(219, 29%, 14%);
-    --White: hsl(0, 0%, 100%);
-    --Lightgray: hsl(0, 0%, 81%);
-    --Lightgrayishblue: hsl(210, 46%, 95%);
-}
-
 h1,
 h2,
 p {
@@ -30,7 +17,7 @@ body {
     width: 100vw;
     justify-content: center;
     align-items: center;
-    background-color: var(--Lightgrayishblue);
+    background-color: hsl(210, 46%, 95%);
 }
 
 .testimonialctn {
@@ -43,7 +30,7 @@ body {
     grid-gap: 14px;
     padding-block: 2rem;
     /* width: min(65rem, 80%); */
-    width: max(65rem, 80%);
+    width: max(65rem, 70%);
 
 }
 
@@ -56,8 +43,10 @@ body {
             'Jeanette'
             'Patrick'
             'Kira'
+           
         ;
     }
+
 
 }
 
@@ -67,7 +56,6 @@ section {
 
 }
 
-/*++++++++++++ Profile +++++++++++*/
 
 .account {
     display: flex;
@@ -82,7 +70,7 @@ section {
 }
 
 .account h2 {
-    color: var(--Lightgray);
+    color: hsl(0, 0%, 81%);
     font-weight: 600;
     font-size: 15px;
 }
@@ -91,10 +79,9 @@ section {
     color: hsl(0, 0%, 81%, 50%);
 }
 
-/*++++++++++++++++++ contents +++++++++++++++*/
 
 h1 {
-    color: var(--Lightgray);
+    color: hsl(0, 0%, 81%);
     font-weight: 600;
     font-size: 20px;
     margin: 10px 0;
@@ -113,7 +100,7 @@ h1 {
 
 .Dan {
     grid-area: Dan;
-    background-color: var(--Moderateviolet);
+    background-color: hsl(263, 55%, 52%);
     background-image: url(bg-pattern-quotation.svg);
     background-position: 100% top;
     background-repeat: no-repeat;
@@ -127,11 +114,11 @@ h1 {
 
 .Jonathan {
     grid-area: Jonathan;
-    background-color: var(--Verydarkgrayishblue);
+    background-color: hsl(217, 19%, 35%);
     background-image: url(bg-pattern-quotation.svg);
     background-position: 100% top;
     background-repeat: no-repeat;
-    background-blend-mode: luminosity;
+    background-blend-mode: difference;
 }
 
 
@@ -139,20 +126,20 @@ h1 {
 
 .Jeanette {
     grid-area: Jeanette;
-    background-color: var(--White);
-    box-shadow: 10px 10px 35px var(--Lightgray);
-    background-image: url(bg-pattern-quotation.svg);
-    background-position: 115% top;
-    background-repeat: no-repeat;
-    background-blend-mode: luminosity;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 10px 10px 35px hsl(0, 0%, 81%);
+    /* background-image: url(bg-pattern-quotation.svg); */
+    /* background-position: 115% top; */
+    /* background-repeat: no-repeat; */
+    /* background-blend-mode: darken; */
 }
 
 
-/*Patric's testimonial*/
+/*Patrick's testimonial*/
 
 .Patrick {
     grid-area: Patrick;
-    background-color: var(--Verydarkblackishblue);
+    background-color: hsl(219, 29%, 14%);
     background-image: url(bg-pattern-quotation.svg);
     background-position: 100% top;
     background-repeat: no-repeat;
@@ -160,34 +147,29 @@ h1 {
 }
 
 .Patrick img {
-    border: 2px solid var(--Moderateviolet);
+    border: 2px solid hsl(263, 55%, 52%);
 }
 
 /*kira's testimonial*/
 
 .Kira {
     grid-area: Kira;
-    background-color: var(--White);
+    background-color: hsl(0, 0%, 100%);
     box-shadow: 2px 2px 35px var(--Lightgray);
-    background-image: url(bg-pattern-quotation.svg);
-    background-position: 100% top;
-    background-repeat: no-repeat;
-    background-blend-mode: luminosity;
     
 
 }
 
-/*Jeanette & kira*/
 
 .Jeanette h2,
 .Kira h2 {
-    color: var(--Verydarkgrayishblue);
+    color: hsl(217, 19%, 35%);
 
 }
 
 .Jeanette h1,
 .Kira h1 {
-    color: var(--Verydarkgrayishblue);
+    color: hsl(217, 19%, 35%);
     margin-right: 12px;
 
 }
